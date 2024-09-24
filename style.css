@@ -1,0 +1,544 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: sans-serif; /* You can change this to your preferred font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; /* Normalizes heading font weight */
+}
+
+ul, ol {
+    list-style: none; /* Removes default list styles */
+}
+
+a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures link color inherits from parent */
+}
+
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+table {
+    border-collapse: collapse; /* Merge borders */
+    width: 100%; /* Make tables responsive */
+}
+
+button {
+    cursor: pointer; /* Change cursor for buttons */
+}
+
+/* Add any additional resets as needed */
+
+main{
+    display: flex;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* gap: rem; */
+background: #FFF;
+}
+
+/* header style */
+
+header{
+display: flex;
+width: 100%;
+padding: 2rem 0rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.625rem;
+align-self: stretch;
+background: #FFF;
+}
+
+.navBar{
+    display: flex;
+    width: ;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: var(--Schemes-Primary-Container, #FFD8EB);
+}
+
+.logoDiv img{
+    display: flex;
+width: 4.375rem;
+height: 4.42844rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.links ul{
+    display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.links ul li{
+    color: #1c1c1c;
+
+    /* material-theme/label/large */
+    font-family: poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; /* 142.857% */
+    letter-spacing: 0.00625rem;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1120px) {
+    header{
+        display: flex;
+        width: 100%;
+        padding: 2rem 0rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.625rem;
+        align-self: stretch; 
+        background: #FFF;
+    }
+
+    .navBar{
+        display: flex;
+width: 100%;
+padding: 1rem 2rem;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+background: var(--Schemes-Primary-Container, #FFD8EB);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    header{
+        display: flex;
+        width: 100%;
+        padding: 1rem 0rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.625rem;
+        align-self: stretch;
+        background: #FFF;
+    }
+
+    .navBar{
+        display: flex;
+width: 100%;
+padding: 0.5rem 1rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+align-self: stretch;
+background: var(--Schemes-Primary-Container, #FFD8EB);
+    }
+}
+
+/* Hero Section */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch; 
+    padding: 0 4rem;
+}
+
+.welcomeheader{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    align-self: stretch;
+    background-color: #FFF; 
+}
+.welcomeheader h1{
+    color: #1C1C1C;
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #000;
+font-family: Rochester;
+font-size: 3.5625rem;
+font-style: normal;
+font-weight: 400;
+line-height: 3.125rem; /* 87.719% */
+letter-spacing: -0.01563rem;
+}
+
+.madeWithLove{
+    display: flex;
+width: 2.9375rem;
+padding: 0.5rem 0.625rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+border-bottom: 1px solid #000;
+}
+.madeWithLove p {
+    color: rgba(28, 28, 28, 0.70);
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.25rem; /* 142.857% */
+letter-spacing: 0.00625rem;
+white-space: nowrap;
+}
+
+.newplatter{
+    display: flex;
+padding: 1rem 0rem;
+flex-direction: column;
+align-items: center;
+gap: 0.5rem;
+align-self: stretch;
+}
+
+.heroImage{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    align-self: stretch; 
+    width: 100%;
+}
+.heroImage div{
+    flex: 1 0 0;
+align-self: stretch;
+height: 100%;
+width: 100%;
+}
+
+.heroImage div img{
+    height: 100%;
+    width: 100%;
+}
+
+.newplaterH1{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem; /* 62.5% */ 
+}
+
+@media screen and (min-width: 480px) and (max-width: 1120px) {
+    .welcomeheader h1{
+        font-size: 3rem;
+    }
+    .hero{
+        gap: 0.5rem;
+        padding: 0 2rem;
+    }
+
+.newplatter{
+    padding: 0;
+    /* gap: 0.5; */
+}
+.newplaterH1{
+    font-size: 3rem;
+}
+.heroImage{
+    display: flex;
+    height: 350px;
+}
+
+/* .heroImage{
+    display: flex;
+    height: 37.5rem;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap; 
+}
+.heroImage div{
+    min-width: 18rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    height: 100%;
+}
+
+.heroImage img{
+    height: 100%;
+} */
+}
+
+
+
+
+
+@media screen and (max-width: 480px)  {
+    .welcomeheader h1{
+        font-size: 2.5rem;
+    }
+    .hero{
+        gap: 0.25rem;
+        padding: 0 1rem;
+
+    }
+    .newplatter{
+        padding: 0;
+        /* gap: 0.25rem; */
+    }
+    .newplaterH1{
+        font-size: 2.5rem;
+    }
+    .heroImage{
+        flex-direction: column;
+        height: 600px;
+    }
+    .heroImage div{
+        height:223px;
+    }
+}
+
+
+/* how to order */
+
+.howToOrder{
+    display: flex;
+padding: 1rem 4rem;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 0.5625rem 1rem;
+align-self: stretch;
+flex-wrap: wrap;
+}
+
+.howToOrderItem{
+    color: #FFF;
+    display: flex;
+height: 9.8125rem;
+min-width: 9.8125rem;
+max-width: 9.8125rem;
+padding: 0.5rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+border-radius: 2rem;
+border: 2px solid var(--Schemes-On-Primary-Container, #370728);
+background: var(--Schemes-Secondary, #715764);
+box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+.howToOrderItem h3{
+    color: var(--Schemes-On-Primary, #FFF);
+text-align: center;
+
+/* material-theme/label/large */
+font-family: poppin;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.25rem; /* 142.857% */
+letter-spacing: 0.00625rem;
+}
+
+.howToOrderItem p{
+    color: var(--Schemes-On-Primary, #FFF);
+text-align: center;
+
+/* material-theme/label/small */
+font-family: poppin;
+font-size: 0.6875rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1rem; /* 145.455% */
+letter-spacing: 0.03125rem;
+}
+
+/* Menu style */
+
+.menu{
+    display: flex;
+width: 100%;
+padding: 1rem 4rem;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+
+.menuHeader{
+    color: #1C1C1C;
+    text-align: center;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: Rochester;
+    font-size: 3.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.125rem; /* 87.719% */
+    letter-spacing: -0.01563rem;  
+    align-self: stretch;
+}
+
+.healthyDrink{
+    display: flex;
+width: 2.9375rem;
+padding: 0.5rem 0.625rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+border-bottom: 1px solid #000;
+}
+.healthyDrink p {
+    color: rgba(28, 28, 28, 0.70);
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.25rem; /* 142.857% */
+letter-spacing: 0.00625rem;
+white-space: nowrap;
+}
+
+.dessertheader h1 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem;
+}
+
+.dessertheader{
+    display: flex;
+padding: 1rem 0rem;
+flex-direction: column;
+align-items: center;
+gap: 0.5rem;
+align-self: stretch;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1120px) {
+   
+    .dessertheader h1 {
+        font-size: 3rem;
+    }
+
+    .menuHeader{
+        font-size: 3rem;
+    }
+
+    .dessertheader{
+        gap: 0.25rem;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 480px)  {
+    .dessertheader h1 {
+        font-size: 2.5rem;
+    }
+
+    .menuHeader{
+        font-size: 2.5rem;
+    }
+}
+
+
+/* General styling for the menuList */
+.menuList {
+    display: flex;
+    padding: 0rem 2rem;
+    justify-content: center;
+    align-items: start;
+    align-content: start;
+    gap: 1rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+    max-height: 19.5rem;
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Light border to define boundaries */
+    box-shadow: inset 0px -4px 6px rgba(0, 0, 0, 0.1); /* Subtle inner shadow to indicate depth */
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px; /* Add padding to make space for the scrollbar */
+}
+
+/* Style for menu items */
+.menuItem {
+    display: flex;
+    width: 250px;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    background: var(--Schemes-Primary, #864B6E);
+}
+
+/* Image inside each menu item */
+.menuItemImg img {
+    width: 4.6875rem;
+    height: 4.6875rem;
+    border-radius: 0.75rem;
+}
+
+/* Content inside each menu item */
+.menuItemContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menuItemContent p {
+    color: var(--Schemes-On-Primary, #FFF);
+    text-align: start;
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0.00625rem;
+}
+
+.menuItemContent p:nth-child(2) {
+    font-size: 1rem;
+}
+
+/* Custom scrollbar styling for modern browsers */
+.menuList::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+.menuList::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05); /* Light background for the scrollbar track */
+    border-radius: 10px;
+}
+
+.menuList::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3); /* Slightly darker scrollbar thumb */
+    border-radius: 10px;
+}
+
+.menuList::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5); /* Darker on hover to indicate interactivity */
+}
